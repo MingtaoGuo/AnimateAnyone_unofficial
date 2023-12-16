@@ -10,6 +10,10 @@ Unofficial implementation of Animate Anyone: Consistent and Controllable Image-t
 ![](https://github.com/MingtaoGuo/AnimateAnyone_unofficial/blob/main/display/sd1.5_iter37800_bs2.png)
 
 - Under training...
+
+:smile::smile::rocket::rocket:__Due to the absence of official source code release, this unofficial code has not been thoroughly validated, and there are still many details to be verified. We welcome collaboration from the community to collectively implement and refine this algorithm！！！__
+
+
 ## Description   
 --------------
 
@@ -45,36 +49,37 @@ python tool_add_reference.py ./models/v1-5-pruned.ckpt ./models/reference_sd15_i
 ```
 - Preprocessing Video Dataset (Video Decoding and Human Skeleton Extraction)
 ``` 
-python tool_get_pose.py --mp4_path temp_dataset/fashion_mp4/ \
-                        --save_frame_path temp_dataset/fashion_png/ \
-                        --save_pose_path temp_dataset/fashion_pose/
+python tool_get_pose.py --mp4_path Dataset/fashion_mp4/ \
+                        --save_frame_path Dataset/fashion_png/ \
+                        --save_pose_path Dataset/fashion_pose/
 ```
 Dataset Organization Structure
 ```
-├── fashion_mp4
-    ├── 1.mp4
-    ├── 2.mp4
+Dataset
+  ├── fashion_mp4
+      ├── 1.mp4
+      ├── 2.mp4
        ...
-├── fashion_png
-    ├── 1.mp4
-        ├── 1.png
-        ├── 2.png
+  ├── fashion_png
+      ├── 1.mp4
+          ├── 1.png
+          ├── 2.png
            ...
-    ├── 2.mp4
-        ├── 1.png
-        ├── 2.png
+      ├── 2.mp4
+          ├── 1.png
+          ├── 2.png
+             ...
+         ...
+  ├── fashion_pose
+      ├── 1.mp4
+          ├── 1.png
+          ├── 2.png
            ...
-       ...
-├── fashion_pose
-    ├── 1.mp4
-        ├── 1.png
-        ├── 2.png
-           ...
-    ├── 2.mp4
-        ├── 1.png
-        ├── 2.png
-           ...
-       ...
+      ├── 2.mp4
+          ├── 1.png
+          ├── 2.png
+             ...
+         ...
 ```       
 - Train
 ```
@@ -89,7 +94,7 @@ import numpy as np
 from torch.utils.data import Dataset
 
 class MyDataset(Dataset):
-    def __init__(self, path="./"):
+    def __init__(self, path="Dataset/"):
         self.path = path
         self.videos = os.listdir(path + "fashion_png")
 
