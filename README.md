@@ -81,7 +81,7 @@ Dataset
              ...
          ...
 ```       
-- Train
+- Training :rocket:
 ```
 python tutorial_train_animate.py
 ```
