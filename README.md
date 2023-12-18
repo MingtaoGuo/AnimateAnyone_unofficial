@@ -12,6 +12,8 @@ Unofficial implementation of Animate Anyone: Consistent and Controllable Image-t
 ![](https://github.com/MingtaoGuo/AnimateAnyone_unofficial/blob/main/display/sd1.5_iter127400_bs2.png)
 - Under training...
 
+**Up to now, after 120,000 training sessions, this unofficial code implementation, although capable of learning the style and color of clothing, currently faces two issues: 1) inability to learn the background and 2) incorrect posture.**
+
 :smile::smile::rocket::rocket:__Due to the absence of official source code release, this unofficial code has not been thoroughly validated, and there are still many details to be verified. We welcome collaboration from the community to collectively implement and refine this algorithm！！！__
 
 
