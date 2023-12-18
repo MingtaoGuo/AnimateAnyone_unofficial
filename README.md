@@ -6,9 +6,10 @@ Unofficial implementation of Animate Anyone: Consistent and Controllable Image-t
 - Batch size: 2
 - GPU: single A6000 48G
 
-- Trainging time: 12hours, global iteration: 37800
+- Trainging time: 12 hours, global iteration: 37800
 ![](https://github.com/MingtaoGuo/AnimateAnyone_unofficial/blob/main/display/sd1.5_iter37800_bs2.png)
-
+- Trainging time: 2 days, global iteration: 127400
+![](https://github.com/MingtaoGuo/AnimateAnyone_unofficial/blob/main/display/sd1.5_iter127400_bs2.png)
 - Under training...
 
 :smile::smile::rocket::rocket:__Due to the absence of official source code release, this unofficial code has not been thoroughly validated, and there are still many details to be verified. We welcome collaboration from the community to collectively implement and refine this algorithm！！！__
