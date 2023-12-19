@@ -10,9 +10,11 @@ Unofficial implementation of Animate Anyone: Consistent and Controllable Image-t
 ![](https://github.com/MingtaoGuo/AnimateAnyone_unofficial/blob/main/display/sd1.5_iter37800_bs2.png)
 - Trainging time: 2 days, global iteration: 127400
 ![](https://github.com/MingtaoGuo/AnimateAnyone_unofficial/blob/main/display/sd1.5_iter127400_bs2.png)
+- Trainging time: 2.5 days, global iteration: 180000
+![](https://github.com/MingtaoGuo/AnimateAnyone_unofficial/blob/main/display/sd1.5_iter180000_bs2.png)
 - Under training...
 
-**Up to now, after 120,000 training sessions, this unofficial code implementation, although capable of learning the style and color of clothing, currently faces two issues: 1) inability to learn the background and 2) incorrect posture.**
+**Up to now, after 180,000 training sessions, this unofficial code implementation still seems unable to correctly learn information about the human skeleton. Sometimes, it even fails to generate a normal human figure, displaying only the background. Moreover, this background seems to resemble the style of the reference.**
 
 :smile::smile::rocket::rocket:__Due to the absence of official source code release, this unofficial code has not been thoroughly validated, and there are still many details to be verified. We welcome collaboration from the community to collectively implement and refine this algorithm！！！__
 
